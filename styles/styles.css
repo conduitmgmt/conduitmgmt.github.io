@@ -64,10 +64,9 @@ a {
   color:#8C8C8C;
 }
 
-/* The alert message box */
 .promo {
   padding: 20px;
-  background-color: #5E17EB; /* Red */
+  background-color: #23272A;
   color: white;
   margin-bottom: 15px;
   border-radius: 10px;

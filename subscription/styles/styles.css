@@ -117,8 +117,7 @@ a {
 }
 
 .pricing-table.ultra .pricing-title {
-	background: rgb(94,23,235);
-  background: radial-gradient(circle, rgba(94,23,235,1) 0%, rgba(0,0,0,1) 100%);
+	background: #23272A;
 }
 
 .pricing-table.recommended .pricing-action {
@@ -221,8 +220,7 @@ a {
 .ultra .table-buy .pricing-action {
 	float: right;
 	color: #FFF;
-  background: rgb(94,23,235);
-  background: radial-gradient(circle, rgba(94,23,235,1) 0%, rgba(0,0,0,1) 100%);
+  background: #23272A;
 	padding: 10px 16px;
 	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
@@ -244,8 +242,7 @@ a {
 }
 
 .ultra .table-buy .pricing-action:hover {
-  background: rgb(94,23,235);
-  background: radial-gradient(circle, rgba(94,23,235,1) 0%, rgba(0,0,0,1) 100%);	
+  background: #23272A;
 }
 
 /** ================
