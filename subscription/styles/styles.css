@@ -249,6 +249,21 @@ a {
   background: #23272A;
 }
 
+.Quote-big {
+	color: #FFF;
+	background: #5E17EB;
+	padding: 10px 200px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	font-weight: 700;
+	font-size: 1.4em;
+	transition: all 0.25s ease;
+	position: absolute;
+    left: 36%;
+    top: 120vh;
+}
+
 /** ================
  * Responsive
  ===================*/
@@ -265,6 +280,12 @@ a {
 		font-size: 1.3em;
 	}
 
+	.Quote-big{
+		top: 550vh;
+		padding: 10px 70px;
+		left: 27%;
+	}
+
  }
 
  @media only screen and (max-width: 767px) {
@@ -278,11 +299,23 @@ a {
  		margin: 0 0 20px 0;
  		width: 100%;
  	}
+
+	.Quote-big{
+		top: 550vh;
+		padding: 10px 70px;
+		left: 27%;
+	}
  }
 
 @media only screen and (max-width: 479px) {
 	.pricing-wrapper {
 		width: 300px;
+	}
+
+	.Quote-big{
+		top: 450vh;
+		padding: 10px 70px;
+		left: 27%;
 	}
 } 
 

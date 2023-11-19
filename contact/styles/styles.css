@@ -113,8 +113,7 @@ body {
 .wrapper .instagram:hover,
 .wrapper .instagram:hover .tooltip,
 .wrapper .instagram:hover .tooltip::before {
-  background: rgb(131,58,180);
-  background: linear-gradient(186deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  background: rgba(253,29,29,1);
   color: #ffffff;
 }
 
