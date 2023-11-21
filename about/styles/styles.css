@@ -17,81 +17,61 @@
   -webkit-text-size-adjust: 100%;
 }
 
-span {
-  background:#23272A;
-  padding:5px;
-  border-radius: 5%;
+body {
+  margin: 0;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.content {
-  margin-left:auto;
-  text-align:center;
-  margin-right:auto;
-  margin-top:150px;
-  margin-bottom: 150px;
-  background-color: #23272A;
+.btnback{
+  background: #5E17EB;
+  border-radius: 2px;
+  padding: 15px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  color: #ffffff;
+  border-color: #000000;
+  margin: 10px;
+  position: relative;
 }
 
-.avi {
-  border-radius:50%;
-  width: 170px;
-  height: 170px;
+
+.glassbox {
+  margin: auto;
+  box-sizing: border-box;
+  padding: 75px 50px;
+  width: 100%;
+  max-width: 800px;
+  background: #23272A;
+  box-shadow: 0px 10px 50px 0 rgb(31 38 135 / 20%);
+  /* CHANGE THIS TO CHANGE THE BLUR AMOUNT */
+  border-radius: 10px;
+  border: 1px solid rgb(255 255 255 / 15%);
+  opacity: 0;
+  animation: fadeIn 2s ease-in forwards;
 }
 
 h1 {
-  color:#5E17EB;
+  color: #5E17EB;
+  text-align: center;
 }
 
-.icon {
-  color:#5E17EB;
+h3 {
+  color: #fff;
+  /*text-align: center;*/
+  font-weight: 400;
 }
 
-.btn {
-  background:#23272A;
-  padding:10px;
-  color:#8C8C8C;
-  border-radius:3px;
-  transition:.4s;
-}
-
-.btn:hover {
-  background:#5E17EB;
-  color:#fff;
-  transition:.4s;
-}
-
-a {
-  text-decoration:none;
-  color:#8C8C8C;
-}
-
-/* The alert message box */
-.promo {
-  padding: 20px;
-  background-color: #5E17EB; /* Red */
-  color: white;
-  margin-bottom: 15px;
-  border-radius: 10px;
-}
-
-/* The close button */
-.closebtn {
-  margin-left: 15px;
-  color: white;
-  font-weight: bold;
-  float: right;
-  font-size: 22px;
-  line-height: 20px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-/* When moving the mouse over the close button */
-.closebtn:hover {
-  color: black;
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-
-@media screen and (max-height: 450px) {
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
 }
