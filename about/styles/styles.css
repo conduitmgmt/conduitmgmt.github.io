@@ -103,6 +103,7 @@ h3 {
   padding: 16px;
   text-align: center;
   background-color: #23272A;
+  border-radius: 5px;
 }
 
 /* Responsive columns - one column layout (vertical) on small screens */
