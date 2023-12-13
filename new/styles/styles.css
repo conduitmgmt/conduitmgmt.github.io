@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap");
 
 :root {
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Ubuntu Condensed', sans-serif;
+
+    
     --blue: rgba(35, 73, 189, 1);
     --blue-selected: rgba(30, 73, 210, 0.8);
     --grey: rgba(104, 104, 104, 1);
@@ -16,7 +20,7 @@ body {
     padding: 0;
     width: 100%;
     background-color: #000000;
-    color: #ffffff;
+    color: #c3c3c3;
 }
 
 h1,
@@ -40,6 +44,11 @@ a {
     display: flex;
     flex-direction: column;
     overflow-y: auto;
+    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 3s; /* Firefox < 16 */
+    -ms-animation: fadein 3s; /* Internet Explorer */
+    -o-animation: fadein 3s; /* Opera < 12.1 */
+    animation: fadein 3s;
 }
 
 .purple {
@@ -318,19 +327,19 @@ a {
     padding-left: 10px;
 }
 
-.top .watch,
+.top .contact,
 .top .queue {
     padding: 10px 25px;
     border-radius: 8px;
 }
 
-.watch {
+.contact {
     color: white;
     display: flex;
     background-color: var(--purple);
 }
 
-.watch:hover {
+.contact:hover {
     background-color: var(--purple-selected);
     cursor: pointer;
 }
@@ -362,6 +371,7 @@ a {
 
 .text{
     padding-left: 40px;
+    color: #c3c3c3;
 }
 
 .movie-desc {
@@ -537,7 +547,7 @@ a {
     border: 2px solid #878585;
 }
 
-.card .watch {
+.card .contact {
     padding: 7px;
     border-radius: 50px;
     border: 2px solid var(--purple);
@@ -681,62 +691,6 @@ a {
 }
 /* END FOOTER */
 
-/* MODAL */
-
-.watch-later-modal {
-    position: fixed;
-    bottom: 0px;
-    left: 0px;
-    z-index: 11;
-    background-color: #000000;
-    margin-bottom: 15px;
-    margin-left: 15px;
-    display: flex;
-    padding: 20px;
-    border-radius: 9px;
-    align-items: center;
-    display: none;
-    box-shadow: 3px 3px 8px black;
-}
-
-.watch-later-modal h3 {
-    font-family: "Roboto", sans-serif;
-    font-size: 20px;
-    color: white;
-}
-
-.watch-later-modal .side-buttons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.watch-later-modal .side-buttons svg {
-    width: 35px;
-    min-width: 35px;
-    height: 35px;
-    min-height: 35px;
-    color: white;
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 6px;
-    border-radius: 50px;
-    margin-left: 20px;
-}
-
-.side-buttons svg:hover {
-    background-color: #141414;
-    transition: background-color 0.3s;
-    cursor: pointer;
-}
-
-.watch-later-modal h3 .playlist {
-    color: var(--purple);
-}
-
-.watch-later-modal h3 .movie {
-    color: var(--purple);
-}
-
 .top-logo{
     height: 8vh;
     width: 7vh;
@@ -793,7 +747,7 @@ a {
         min-width: 20px;
     }
 
-    .top .watch,
+    .top .contact,
     .top .queue {
         padding: 7px 20px;
     }
@@ -1021,7 +975,7 @@ a {
     }
 
     .card .queue,
-    .card .watch,
+    .card .contact,
     .card .star {
         padding: 4px;
     }
@@ -1100,4 +1054,21 @@ a {
     .socials svg {
         padding: 0px 10px;
     }
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
