@@ -279,8 +279,6 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: auto;
-    margin-left: 10%;
 }
 
 .top h1 {
