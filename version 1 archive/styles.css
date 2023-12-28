@@ -5,8 +5,8 @@
   font-family: 'Ubuntu Condensed', sans-serif;
 
   color: #f6f6f6;
-  background-color: #000000;
-  background-image:  radial-gradient(#ffffff75 1.1500000000000001px, transparent 1.1500000000000001px), radial-gradient(#ffffff82 1.1500000000000001px, #000000 1.1500000000000001px);
+  background-color: #100e17;
+  background-image:  radial-gradient(#ffffff75 1.1500000000000001px, transparent 1.1500000000000001px), radial-gradient(#ffffff82 1.1500000000000001px, #100e17 1.1500000000000001px);
   background-size: 48px 48px;
   background-position: 0 0,23px 23px; 
 
@@ -86,7 +86,7 @@ a {
 
 /* When moving the mouse over the close button */
 .closebtn:hover {
-  color: black;
+  color: rgb(16,14,23);
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */

@@ -19,7 +19,7 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    background-color: #000000;
+    background-color: #100e17;
     color: #c3c3c3;
 }
 
@@ -28,7 +28,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-    background: #000000;        /* color of the tracking area */
+    background: #100e17;        /* color of the tracking area */
 }
 
 body::-webkit-scrollbar-thumb {
@@ -118,14 +118,14 @@ a {
 }
 
 .header:hover {
-    background-color: rgb(0, 0, 0);
-    box-shadow: 0px 2px 10px black;
+    background-color: rgb(16,14,23);
+    box-shadow: 0px 2px 10px rgb(16,14,23);
     transition: background-color 0.3s;
 }
 
 .header-active {
-    background-color: rgb(0, 0, 0);
-    box-shadow: 0px 2px 10px black;
+    background-color: rgb(16,14,23);
+    box-shadow: 0px 2px 10px rgb(16,14,23);
     transition: background-color 0.3s;
 }
 
@@ -220,8 +220,8 @@ a {
     height: 100vh;
     display: flex;
     align-items: center;
-    background-color: #000000;
-    background-image:  radial-gradient(#ffffff75 1.1500000000000001px, transparent 1.1500000000000001px), radial-gradient(#ffffff82 1.1500000000000001px, #000000 1.1500000000000001px);
+    background-color: #100e17;
+    background-image:  radial-gradient(#ffffff75 1.1500000000000001px, transparent 1.1500000000000001px), radial-gradient(#ffffff82 1.1500000000000001px, #100e17 1.1500000000000001px);
     background-size: 48px 48px;
     padding-top: 5vh;
 }
@@ -234,8 +234,8 @@ a {
     background: rgb(20, 20, 20);
     background: linear-gradient(
         0deg,
-        rgb(0, 0, 0) 0%,
-        rgba(255, 255, 255, 0) 36%
+        rgb(16,14,23) 0%,
+        rgb(16,14,23,0) 36%
     );
 }
 
@@ -310,7 +310,7 @@ a {
     font-weight: 600;
     font-size: 95px;
     color: white;
-    text-shadow: 5px 5px 10px black;
+    text-shadow: 5px 5px 10px rgb(16,14,23);
 }
 
 .top p {
@@ -319,7 +319,7 @@ a {
     font-weight: 400;
     font-size: 20px;
     color: white;
-    text-shadow: 2px 2px 1px black;
+    text-shadow: 2px 2px 1px rgb(16,14,23);
     padding: 25px 0px;
 }
 
@@ -364,8 +364,10 @@ a {
 .mid {
     display: flex;
     flex-direction: column;
-    background-color: #000000;
+    background-color: #100e17;
     padding: 40px;
+    justify-content: center;
+    align-items: center;
 }
 
 .mid .content-area {
@@ -395,7 +397,7 @@ a {
     display: flex;
     flex-direction: column;
     min-height: 100px;
-    background-color: #000000;
+    background-color: #100e17;
     justify-content: center;
     align-items: center;
 }

@@ -5,8 +5,8 @@
   font-family: 'Ubuntu Condensed', sans-serif;
 
   color: #f6f6f6;
-  background-color: #000000;
-  background-image:  radial-gradient(#ffffff75 1.1500000000000001px, transparent 1.1500000000000001px), radial-gradient(#ffffff82 1.1500000000000001px, #000000 1.1500000000000001px);
+  background-color: #100e17;
+  background-image:  radial-gradient(#ffffff75 1.1500000000000001px, transparent 1.1500000000000001px), radial-gradient(#ffffff82 1.1500000000000001px, #100e17 1.1500000000000001px);
   background-size: 48px 48px;
   background-position: 0 0,23px 23px; 
 
@@ -38,7 +38,7 @@ body {
   cursor: pointer;
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   color: #ffffff;
-  border-color: #000000;
+  border-color: #100e17;
   margin: 10px;
   position: relative;
 }

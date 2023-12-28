@@ -5,8 +5,8 @@
   font-family: 'Ubuntu Condensed', sans-serif;
 
   color: #f6f6f6;
-  background-color: #000000;
-  background-image:  radial-gradient(#ffffff75 1.1500000000000001px, transparent 1.1500000000000001px), radial-gradient(#ffffff82 1.1500000000000001px, #000000 1.1500000000000001px);
+  background-color: #100e17;
+  background-image:  radial-gradient(#ffffff75 1.1500000000000001px, transparent 1.1500000000000001px), radial-gradient(#ffffff82 1.1500000000000001px, #100e17 1.1500000000000001px);
   background-size: 48px 48px;
   background-position: 0 0,23px 23px; 
 
@@ -33,294 +33,114 @@
   cursor: pointer;
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   color: #ffffff;
-  border-color: #000000;
+  border-color: #100e17;
   margin: 10px;
   position: relative;
   opacity: 0;
   animation: fadeIn 2s ease-in forwards;
 }
 
-ul {
-	list-style-type: none;
-  border-radius: 5px;
+body {
+  background-color: #100e17;
+  font-family: 'Open Sans', sans-serif;
 }
 
-a {
-	color: #5E17EB;
-	text-decoration: none;
+.container {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  left: calc(50% - 300px);
+  display: flex;
+  margin-top: 10%;
+  justify-content: center;
+  align-items: center;
 }
 
-.pricing-table-title {
-	text-transform: uppercase;
-	font-weight: 700;
-	font-size: 2.6em;
-	color: #FFF;
-	margin-top: 15px;
-	text-align: left;
-	margin-bottom: 25px;
-	text-shadow: 0 1px 1px rgba(0,0,0,0.4);
-  border-radius: 5px;
+.card {
+  display: flex;
+  height: 280px;
+  width: 200px;
+  background-color: #17141d;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #100e17;
+/*   margin-left: -50px; */
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
 }
 
-.pricing-table-title a {
-	font-size: 0.6em;
+.card:not(:first-child) {
+    margin-left: -50px;
 }
 
-.clearfix:after {
-	content: '';
-	display: block;
-	height: 0;
-	width: 0;
-	clear: both;
-  border-radius: 5px;
-}
-/** ========================
- * Contenedor
- ============================*/
-.pricing-wrapper {
-	width: 960px;
-	margin: 40px auto 0;
-  border-radius: 5px;
+.card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
 }
 
-.pricing-table {
-	margin: 0 10px;
-	text-align: center;
-	width: 300px;
-	float: left;
-	-webkit-box-shadow: 0 0 15px rgba(0,0,0,0.4);
-	box-shadow: 0 0 15px rgba(0,0,0,0.4);
-	-webkit-transition: all 0.25s ease;
-	-o-transition: all 0.25s ease;
-	transition: all 0.25s ease;
-  border-radius: 5px;
-  opacity: 0;
-  animation: fadeIn 1s ease-in forwards;
+.card:hover ~ .card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
 }
 
-.pricing-table:hover {
-	-webkit-transform: scale(1.06);
-	-ms-transform: scale(1.06);
-	-o-transform: scale(1.06);
-	transform: scale(1.06);
-  border-radius: 5px;
+.title {
+  color: white;
+  font-weight: 300;
+  position: absolute;
+  left: 20px;
+  top: 15px;
 }
 
-.pricing-title {
-	color: #FFF;
-	background: #23272A;
-	padding: 20px 0;
-	font-size: 2em;
-	text-transform: uppercase;
-	text-shadow: 0 1px 1px rgba(0,0,0,0.4);
-  border-radius: 5px;
+.bar {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  height: 5px;
+  width: 150px;
 }
 
-.pricing-table.recommended .pricing-title {
-	background: #5E17EB;
+.emptybar {
+  background-color: #2e3033;
+  width: 100%;
+  height: 100%;
 }
 
-.pricing-table.ultra .pricing-title {
-	background: #23272A;
+.filledbar {
+  position: absolute;
+  top: 0px;
+  z-index: 3;
+  width: 0px;
+  height: 100%;
+  background: rgb(16,14,23);
+  background: linear-gradient(90deg, rgb(16,14,23) 0%, rgb(208, 127, 224) 65%, #5E17EB 100%);
+  transition: 0.6s ease-out;
 }
 
-.pricing-table.recommended .pricing-action {
-	background: #5E17EB;
+.card:hover .filledbar {
+  width: 120px;
+  transition: 0.4s ease-out;
 }
 
-.pricing-table .price {
-	background: #5E17EB;
-	font-size: 3.4em;
-	font-weight: 700;
-	padding: 20px 0;
-	text-shadow: 0 1px 1px rgba(0,0,0,0.4);
-  border-radius: 5px;
+.circle {
+  position: absolute;
+  top: 150px;
+  left: calc(50% - 60px);
 }
 
-.pricing-table .price sup {
-	font-size: 0.4em;
-	position: relative;
+.stroke {
+  stroke: white;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+  transition: 0.6s ease-out;
 }
 
-.table-list {
-	background: #FFF;
-	color: #403d3a;
-  border-radius: 5px;
+svg {
+  fill: #17141d;
+  stroke-width: 2px;
 }
 
-.table-list li {
-	font-size: 1.4em;
-	font-weight: 700;
-	padding: 12px 8px;
-}
-
-.table-list li:before {
-	content: "\f00c";
-	font-family: 'FontAwesome';
-	color: #5E17EB;
-	display: inline-block;
-	position: relative;
-	right: 5px;
-	font-size: 16px;
-} 
-
-.table-list li span {
-	font-weight: 400;
-}
-
-.table-list li span.unlimited {
-	color: #FFF;
-	background: #5E17EB;
-	font-size: 0.9em;
-	padding: 5px 7px;
-	display: inline-block;
-	-webkit-border-radius: 38px;
-	-moz-border-radius: 38px;
-	border-radius: 38px;
-}
-
-
-.table-list li:nth-child(2n) {
-	background: #F0F0F0;
-}
-
-.table-buy {
-	background: #FFF;
-	padding: 15px;
-	text-align: left;
-	overflow: hidden;
-  border-radius: 5px;
-}
-
-.table-buy p {
-	float: left;
-	color: #37353a;
-	font-weight: 700;
-	font-size: 2.4em;
-}
-
-.table-buy p sup {
-	font-size: 0.5em;
-	position: relative;
-	left: 5px;
-}
-
-.table-buy .pricing-action {
-	float: right;
-	color: #FFF;
-	background: #23272A;
-	padding: 10px 16px;
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
-	border-radius: 2px;
-	font-weight: 700;
-	font-size: 1.4em;
-	text-shadow: 0 1px 1px rgba(0,0,0,0.4);
-	-webkit-transition: all 0.25s ease;
-	-o-transition: all 0.25s ease;
-	transition: all 0.25s ease;
-}
-
-.ultra .table-buy .pricing-action {
-	float: right;
-	color: #FFF;
-  background: #23272A;
-	padding: 10px 16px;
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
-	border-radius: 2px;
-	font-weight: 700;
-	font-size: 1.4em;
-	text-shadow: 0 1px 1px rgba(0,0,0,0.4);
-	-webkit-transition: all 0.25s ease;
-	-o-transition: all 0.25s ease;
-	transition: all 0.25s ease;
-}
-
-.table-buy .pricing-action:hover {
-	background: #23272A;
-}
-
-.recommended .table-buy .pricing-action:hover {
-	background: #5E17EB;	
-}
-
-.ultra .table-buy .pricing-action:hover {
-  background: #23272A;
-}
-
-.Quote-big {
-	color: #FFF;
-	background: #5E17EB;
-	padding: 10px 200px;
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
-	border-radius: 2px;
-	font-weight: 700;
-	font-size: 1.4em;
-	transition: all 0.25s ease;
-	position: absolute;
-    left: 36%;
-    top: 120vh;
-}
-
-/** ================
- * Responsive
- ===================*/
- @media only screen and (min-width: 768px) and (max-width: 959px) {
- 	.pricing-wrapper {
- 		width: 768px;
- 	}
-
- 	.pricing-table {
- 		width: 236px;
- 	}
-	
-	.table-list li {
-		font-size: 1.3em;
-	}
-
-	.Quote-big{
-		top: 550vh;
-		padding: 10px 70px;
-		left: 27%;
-	}
-
- }
-
- @media only screen and (max-width: 767px) {
- 	.pricing-wrapper {
- 		width: 420px;
- 	}
-
- 	.pricing-table {
- 		display: block;
- 		float: none;
- 		margin: 0 0 20px 0;
- 		width: 100%;
- 	}
-
-	.Quote-big{
-		top: 550vh;
-		padding: 10px 70px;
-		left: 27%;
-	}
- }
-
-@media only screen and (max-width: 479px) {
-	.pricing-wrapper {
-		width: 300px;
-	}
-
-	.Quote-big{
-		top: 450vh;
-		padding: 10px 70px;
-		left: 27%;
-	}
-} 
-
-@keyframes fadeIn {
-  100% {
-    opacity: 1;
-  }
+.card:hover .stroke {
+  stroke-dashoffset: 100;
+  transition: 0.6s ease-out;
 }
