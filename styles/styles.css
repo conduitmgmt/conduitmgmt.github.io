@@ -301,7 +301,7 @@ a {
 .top .right-side {
     width: 33%;
     height: 80%;
-    margin-right: 10%;
+    margin-right: 2%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -460,7 +460,7 @@ a {
 
 .top-logo{
     height: 8vh;
-    width: 7vh;
+    width: 8vh;
 }
 
 .typing {
