@@ -299,7 +299,7 @@ a {
 }
 
 .top .right-side {
-    width: 40%;
+    width: 33%;
     height: 80%;
     margin-right: 10%;
     display: flex;
@@ -565,6 +565,10 @@ a {
         width: 45%;
     }
 
+    .top .right-side{
+        width: 33%;
+    }
+
     .mid .search-area {
         height: 400px;
     }
@@ -582,6 +586,7 @@ a {
     .modal-content {
         max-width: 700px;
     }
+    
 }
 
 @media screen and (max-width: 1045px) {
