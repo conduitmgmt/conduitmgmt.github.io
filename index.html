@@ -1,144 +1,551 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conduit Management</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-    <script src="https://use.fontawesome.com/a3fe9be396.js"></script>
-    <script src="https://kit.fontawesome.com/dedddf50d6.js" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="js/index.js"></script>
-	<link rel="icon" type="image/png" href="icon.png"/>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="website creation, SEO, Social Optimizations, online presence, digital marketing, brand visibility, instagram posts, facebook ads, tiktok posts instagram reels"/>
+  <meta name="description" content="Elevate your online presence with Conduit Management. Specializing in website creation, SEO, and Social Optimizations, we craft visually stunning websites that engage your audience effectively. Trust us to navigate the digital landscape, ensuring your brand stands out in the dynamic online sphere."/>
+  <meta name="author" content="Conduit Management"/>
+
+  <title>Conduit Managment</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- font awesome style -->
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <script src="https://use.fontawesome.com/a3fe9be396.js"></script>
+  <script src="https://kit.fontawesome.com/dedddf50d6.js" crossorigin="anonymous"></script>
+
 </head>
-<body onload="AddCarouselButtons(); CheckSizeAttributes(); AddCards(); MakeJumbotron(); CheckCards(); ResizeHeader();" onscroll="ScrollFunction();" onresize="CheckSizeAttributes(); CheckCards(); MakeJumbotron(); ResizeHeader();">
-    <div class="content">
-        <div class="header">
-            <div class="brand">
-                <a href="https://conduitmgmt.com/"><img src="img/Logo-large.png" class="top-logo"></a>
-                <!--<h1 class="red">FREE</h1>
-                <h1 class="white">contact</h1>-->
-            </div>
-            <div class="main-nav">
-                <a href="https://conduitmgmt.com/" class="button-container">
-                    <h2>Home</h2>
-                </a>
-                <a onclick="SmoothScroll('purchase');" class="button-container">
-                    <h2>Purchase</h2>
-                </a>
-                <a  href="https://conduitmgmt.com/contact" class="button-container">
-                    <h2>Contact</h2>
-                </a>
-            </div>
-            <div class="right-nav">
-                <div class="button-container login">
-                    <h2></h2>
-                </div>
-            </div>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="header_top">
+        <div class="container-fluid">
+          <div class="contact_nav">
+            <a href="https://instagram.com/conduitmanagement">
+              <i class="fa-brands fa-instagram"></i>
+              <span>
+                Instagram
+              </span>
+            </a>
+            <a href="mailto:conduitmgmt@gmail.com">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span>
+                Email
+              </span>
+            </a>
+          </div>
         </div>
-        <div class="top">
-            <div class="image-container">
-                <div class="left-side">
-                    <h1>Take Your Business To The <i class="fa-solid fa-arrow-up fa-bounce" style="color: #8c52ff;"></i> Level</h1>
-                    <p style="color: #9a9999;" class="typin">With Conduit, Get More Done.</p>
-                    <div class="button-section"><a href="https://conduitmgmt.com/contact/" target="_blank">
-                        <div class="contact">
-                            <h3>Contact </h3>
-                        </div></a>
-                    </div>
-                </div>
-                <div class="right-side">
-                    <img src="img/Logo-large.png" class="large-logo-top">
-                </div>
+      </div>
+      <div class="header_bottom">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <a class="navbar-brand" href="index.html">
+              <span>
+                Conduit Management
+              </span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""> </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about"> About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="mailto:conduitmgmt@gmail.com">Contact Us</a>
+                </li>
+              </ul>
             </div>
+          </nav>
         </div>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class="slider_section ">
+      <div class="container ">
+        <div class="row">
+          <div class="col-md-6 ">
+            <div class="detail-box">
+              <h1>
+                Engage <br>
+                Connect <br>
+                Succeed
 
-        <div class="mid" id="about">
-            <div class="content-area">
-                <h2 class="content-title">It's All About You! 🫵</h2>
-                <div class="text">
-                    <p>As the world rapidly becomes more and more technologically advanced, dont be left in the primitive dust! Let us handle your business' growth while you spend more time on the main things that matter to you and your customers!</p>
-                </div>
+              </h1>
+              <p>
+                Do More and Be More with Conduit Management on your side and let us take care of all of your social needs! From packages ranging from a proffesional "top of the line" website to us posting everyday and optimising your content on any platform you desire!
+              </p>
+              <a href="mailto:conduitmgmt@gmail.com">
+                Contact Us
+              </a>
             </div>
-
-            <div class="content-area">
-                <h2 class="content-title">Watch Your Business Grow! 🌱</h2>
-                <div class="text">
-                    <p>With Conduit at your side and expanding your reach, watch as more and more clients locally and or from around the world appear at your door! </p>
-                </div>
+          </div>
+          <div class="col-md-6">
+            <div class="img-box">
+              <img src="img/Logo-large.png" alt="Conduit Management Full Logo Front Homepage">
             </div>
-
-            <div class="content-area">
-                <h2 class="content-title">Why Us? ❓</h2>
-                <div class="text">
-                    <p>At Conduit, we focus on <b>Quality</b> over Quantity, determined to keeping the costs low. We wish to work with businesses side by side as partners, going through each step, hand in hand and offer you the most value out of our services.</p>
-                </div>
-            </div>
-
-            <div class="content-area">
-                <h2 class="content-title">Can We Fulfill Your Needs? 🤨</h2>
-                <div class="text">
-                    <p>To show our competency, this entire webpage built with pure HTML/JS/CSS <a href="https://github.com/conduitmgmt/conduitmgmt.github.io/" style="text-decoration: none; color: #5ce1e6;">Code</a> from scratch. We are more than capable building top of the line proffessional websites with Wordpress, Wix and Squarespace.</p>
-                    <p>Check out our <a href="https://conduitmgmt.com/contact" style="text-decoration: none; color: #5ce1e6;">Socials</a> to see our strength in Social Media Managment.</p>
-                </div>
-            </div>
-
-            <div class="content-area">
-                <h2 class="content-title">What Can We Offer? 🤩</h2>
-                <div class="text">
-                    <p>From a one time purchase of a modern elegant webpage for your business to a subscription; where we give you unlimited data and techniques to build your online presence with, ranging from SEO Optimisation to us posting several high quality posts and videos on your socials every day.</p>
-                    <p>Still not satisfied? Try the Conduit Ultra Plan and recieve exclusive BETA releases of techniques and implementations such as AI within your business.</p>
-            </div>
-
+          </div>
         </div>
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
 
-
-        <div class="mid" id="purchase">
-            <div class="content-area">
-                <h2 class="content-title">Purchase Options</h2>
-                <div class="text">
-                    <a href="https://conduitmgmt.com/contact" style="text-decoration: none; color: #5ce1e6;">Contact Us</a> 
-                    <p>Through our Socials to recieve a plan tailored to your needs. You dont want that feature? No worries, you wont be charged for it! And the thing that seperates us from our competitors is that we want you to succeed, hence why all plans will be modified to suit your business' profit.</p>
-                </div>
-            </div>
+  <!-- feature section -->
+  <section class="feature_section">
+    <div class="container">
+      <div class="feature_container">
+        <div class="box">
+          <div class="img-box">
+            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zm-312 8v64c0 13.3 10.7 24 24 24s24-10.7 24-24l0-64c0-13.3-10.7-24-24-24s-24 10.7-24 24zm80-96V280c0 13.3 10.7 24 24 24s24-10.7 24-24V120c0-13.3-10.7-24-24-24s-24 10.7-24 24zm80 64v96c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>
+          </div>
+          <h5 class="name">
+            Analyse
+          </h5>
         </div>
-
-        <div class="bottom">
-            <div class="btn-row">
-                <h4><a href="https://conduitmgmt.com/" style="text-decoration: none; color: #8c52ff;">Home</a></h4>
-                <h4><a href="https://conduitmgmt.com/contact" style="text-decoration: none; color: #8c52ff;">Contact</a></h4>
-                <h4><a href="https://qyrhal.github.io/" style="text-decoration: none; color: #8c52ff;">Vision</a></h4>
-            </div>
-            <div class="btn-row">
-                <h4><a href="https://github.com/conduitmgmt/" style="text-decoration: none; color: #8c52ff;">Dev</a></h4>
-                <h4><a href="https://conduitmgmt.com/subscription" style="text-decoration: none; color: #8c52ff;">Plans</a></h4>
-                <h4></h4>
-            </div>
-            <div class="btn-row">
-                <div class="brand">
-                    <img src="img/Fullogo.png" alt="Conduit Management Full Logo" style="height: 80px; width: 240px;">
-                </div>
-                <div class="socials" style="display: none;">
-                    <a href=""><svg fill="currentColor" viewBox="0 0 16 16">
-                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                        </svg></a>
-                    <a href="">
-                        <svg fill="currentColor" viewBox="0 0 16 16">
-                            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
-                        </svg>
-                    </a>
-                    <a href="">
-                        <svg fill="currentColor" viewBox="0 0 16 16">
-                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class="btn-row">
-                <p>©TheMid | ©Qyrhal | ©conduitmgmt 2023-2024</p>
-            </div>
+        <div class="box activel">
+          <div class="img-box">
+            <svg xmlns="http://www.w3.org/2000/svg" height="512" width="512" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M512 32c0 113.6-84.6 207.5-194.2 222c-7.1-53.4-30.6-101.6-65.3-139.3C290.8 46.3 364 0 448 0h32c17.7 0 32 14.3 32 32zM0 96C0 78.3 14.3 64 32 64H64c123.7 0 224 100.3 224 224v32V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V320C100.3 320 0 219.7 0 96z"/></svg>
+          </div>
+          <h5 class="name">
+            Improve
+          </h5>
         </div>
+        <div class="box">
+          <div class="img-box">
+            <svg xmlns="http://www.w3.org/2000/svg" height="512" width="512" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M384 160c-17.7 0-32-14.3-32-32s14.3-32 32-32H544c17.7 0 32 14.3 32 32V288c0 17.7-14.3 32-32 32s-32-14.3-32-32V205.3L342.6 374.6c-12.5 12.5-32.8 12.5-45.3 0L192 269.3 54.6 406.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160c12.5-12.5 32.8-12.5 45.3 0L320 306.7 466.7 160H384z"/></svg>
+          </div>
+          <h5 class="name">
+            Maintain
+          </h5>
+        </div>
+      </div>
     </div>
+  </section>
+
+  <!-- end feature section -->
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding-bottom" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-md-6">
+          <div class="detail-box">
+            <h2>
+              About us
+            </h2>
+            <p>
+              Welcome to Conduit Management, your digital destination for unparalleled online success. We specialize in crafting captivating websites that embody your brand while ensuring optimal functionality. Our expertise extends to SEO and Social Optimizations, guaranteeing a prominent digital presence that resonates with your audience. With Conduit, navigate the digital landscape with confidence, as we streamline your online journey, ensuring your brand stands out in the dynamic digital sphere.
+            </p>
+            <a href="" style="display: none;">
+              Read More
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-7 col-md-6">
+          <div class="img-box">
+            <img src="img/temp.png" alt="Image of About Us at Conduit Management">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+
+  <!-- professional section -->
+
+  <section class="professional_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="img/instagram.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-6 ">
+          <div class="detail-box">
+            <h2>
+              We Provide<br>
+              For All Your Media Needs!
+            </h2>
+            <p>
+              At Conduit, we work hard so you don't have to! With our skilled technicians, analysts and consultants we optimise for the best growth for you and your business, targetting the right customers with the right engagement.
+            </p>
+            <a href="mailto:conduitmgmt@gmail.com">
+              Contact Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end professional section -->
+
+  <!-- service section -->
+
+  <section class="service_section layout_padding" id="services">
+    <div class="container ">
+      <div class="heading_container heading_center">
+        <h2> Our Services </h2>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-4 mx-auto">
+          <div class="box ">
+            <div class="img-box">
+              <svg xmlns="http://www.w3.org/2000/svg" height="500" width="500" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#1bcaff" d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64H348.7c2.2 20.4 3.3 41.8 3.3 64zm28.8-64H503.9c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0H18.6C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192H131.2c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6H344.3c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352H135.3zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6H493.4z"/></svg>
+            </div>
+            <div class="detail-box">
+              <h5>
+                Website Creation
+              </h5>
+              <p>
+                We will create a proffesional website for you and your business with numerous templates to choose from! Level up your business with Conduit Website Creation Package.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 mx-auto">
+          <div class="box ">
+            <div class="img-box">
+              <svg xmlns="http://www.w3.org/2000/svg" height="500" width="500" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#1bcaff" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+            </div>
+            <div class="detail-box">
+              <h5>
+                SEO
+              </h5>
+              <p>
+                We will make sure that Google Search or any other search engine for that matter, will rank your business higher than the rest of the competition.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 mx-auto">
+          <div class="box ">
+            <div class="img-box">
+              <svg xmlns="http://www.w3.org/2000/svg" height="500" width="500" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#1bcaff"  d="M181.3 32.4c17.4 2.9 29.2 19.4 26.3 36.8L197.8 128h95.1l11.5-69.3c2.9-17.4 19.4-29.2 36.8-26.3s29.2 19.4 26.3 36.8L357.8 128H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H347.1L325.8 320H384c17.7 0 32 14.3 32 32s-14.3 32-32 32H315.1l-11.5 69.3c-2.9 17.4-19.4 29.2-36.8 26.3s-29.2-19.4-26.3-36.8l9.8-58.7H155.1l-11.5 69.3c-2.9 17.4-19.4 29.2-36.8 26.3s-29.2-19.4-26.3-36.8L90.2 384H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h68.9l21.3-128H64c-17.7 0-32-14.3-32-32s14.3-32 32-32h68.9l11.5-69.3c2.9-17.4 19.4-29.2 36.8-26.3zM187.1 192L165.8 320h95.1l21.3-128H187.1z"/></svg>
+            </div>
+            <div class="detail-box">
+              <h5>
+                Posts and Reels
+              </h5>
+              <p>
+                We will create customised posts and reels that we have analysed through the algorithm, stylised for your brand, for you to gain followers, likes, shares and engagement.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="btn-box" style="display: none;">
+        <a href="">
+          View More
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- end service section -->
+
+  <!-- client section -->
+
+  <section class="client_section " style="display: none;">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          What Our Clients Say
+        </h2>
+      </div>
+      <div class="carousel-wrap layout_padding2-top ">
+        <div class="owl-carousel">
+          <div class="item">
+            <div class="box">
+              <div class="client_id">
+                <div class="img-box">
+                  <img src="images/client-1.jpg" alt="">
+                </div>
+                <div class="client_detail">
+                  <div class="client_info">
+                    <h6>
+                      Jorch morik
+                    </h6>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                  </div>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="client_text">
+                <p>
+                  chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="client_id">
+                <div class="img-box">
+                  <img src="images/client-2.jpg" alt="">
+                </div>
+                <div class="client_detail">
+                  <div class="client_info">
+                    <h6>
+                      Jorch morik
+                    </h6>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                  </div>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="client_text">
+                <p>
+                  chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="client_id">
+                <div class="img-box">
+                  <img src="images/client-1.jpg" alt="">
+                </div>
+                <div class="client_detail">
+                  <div class="client_info">
+                    <h6>
+                      Jorch morik
+                    </h6>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                  </div>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="client_text">
+                <p>
+                  chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="client_id">
+                <div class="img-box">
+                  <img src="images/client-2.jpg" alt="">
+                </div>
+                <div class="client_detail">
+                  <div class="client_info">
+                    <h6>
+                      Jorch morik
+                    </h6>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                  </div>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="client_text">
+                <p>
+                  chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end client section -->
+
+  <!-- contact section -->
+
+  <section class="contact_section layout_padding" style="display: none;">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Contact Us
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <form action="">
+            <div>
+              <input type="text" placeholder="Name" />
+            </div>
+            <div>
+              <input type="text" placeholder="Phone Number" />
+            </div>
+            <div>
+              <input type="email" placeholder="Email" />
+            </div>
+            <div>
+              <input type="text" class="message-box" placeholder="Message" />
+            </div>
+            <div class="d-flex ">
+              <button>
+                SEND
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <div class="map_container">
+            <div class="map">
+              <div id="googleMap" style="width:100%;height:100%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end contact section -->
+
+
+  <!-- info section -->
+  <section class="info_section ">
+    <div class="container">
+      <h4>
+        Get In Touch
+      </h4>
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <div class="info_items">
+            <div class="row">
+              <div class="col-md-4">
+                <a href="">
+                  <div class="item ">
+                    <div class="img-box ">
+                      <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    </div>
+                    <p>
+                      Melbourne, Australia
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4">
+                <a href="https://instagram.com/conduitmanagement">
+                  <div class="item ">
+                    <div class="img-box ">
+                      <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                    </div>
+                    <p>
+                      Instagram
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4">
+                <a href="mailto:conduitmgmt@gmail.com">
+                  <div class="item ">
+                    <div class="img-box">
+                      <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </div>
+                    <p>
+                      conduitmgmt@gmail.com
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="social-box">
+      <h4>
+        Follow Us On Our Social Media
+      </h4>
+      <div class="box" style="display: none;">
+        <a href="">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+        </a>
+        <a href="">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        </a>
+        <a href="">
+          <i class="fa fa-youtube" aria-hidden="true"></i>
+        </a>
+        <a href="">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- end info_section -->
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayDateYear"></span> All Rights Reserved By
+        <a href="https://conduitmgmt.github.io/">Conduit Management</a>
+      </p>
+      <p style="font-size: 5px;">©Qyrhal | ©TheMid</p>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <script src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+  <!-- End Google Map -->
+
+
 </body>
+
 </html>
