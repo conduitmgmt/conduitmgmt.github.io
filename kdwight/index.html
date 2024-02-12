@@ -2,170 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&family=Roboto&display=swap");
-    @import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap");
-
-    html{
-      background: rgb(140,82,255);
-    }
-    
-    body {
-      font-family: 'Oswald', sans-serif;
-      font-family: 'Ubuntu Condensed', sans-serif;
-      background: rgb(140,82,255);
-      background: linear-gradient(90deg, rgba(140,82,255,1) 0%, rgba(92,225,230,1) 100%);
-      margin: 0;
-      padding: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-    }
-
-    #dashboard {
-      width: 95%;
-      height: 100%;
-      background: rgb(140,82,255);
-      background: linear-gradient(90deg, rgba(140,82,255,1) 0%, rgba(92,225,230,1) 100%);
-      border-radius: 10px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-      animation: fadeIn 0.5s ease;
-    }
-
-    .dashboard-section {
-      padding: 20px;
-      border-radius: 10px;
-      margin-bottom: 30px;
-      border: 0px solid #f9f9f9;
-      background-color: #f9fafd;
-    }
-
-    #avatar {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #f9fafd;
-      color: #fff;
-    }
-
-    #avatar img {
-      width: 120px;
-      height: 120px;
-      border-radius: 5%;
-      border: 2px solid #000000;
-      object-fit: cover;
-      animation: zoomIn 0.5s ease;
-    }
-
-    #employee-details,
-    #name-box,
-    #updates,
-    #notifications,
-    #tasks,
-    #contact-form,
-    #nifty-features {
-      border: none; /* Remove border for these sections */
-    }
-
-    #name-box {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-self: center;
-    }
-
-    h2 {
-      color: #3498db;
-    }
-
-    button {
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-      background-color: rgb(92,225,230);
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
-      animation: fadeIn 0.5s ease;
-    }
-
-    button:hover {
-      background-color: rgb(92,225,230);
-    }
-
-    a {
-        text-decoration: none;
-        color: rgb(140,82,255);
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
-
-    @keyframes zoomIn {
-      from {
-        transform: scale(0);
-      }
-      to {
-        transform: scale(1);
-      }
-    }
-
-    @media (max-width: 768px) {
-      #avatar img {
-        width: 80px;
-        height: 80px;
-      }
-    }
-  </style>
-  <title>Conduit Management Dashboard | KD</title>
+  <title>Kaelem Dwight | Conduit Managment</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <script src="https://use.fontawesome.com/a3fe9be396.js"></script>
+  <script src="https://kit.fontawesome.com/dedddf50d6.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="index.js"></script>
+	<link rel="icon" type="image/png" href="icon.png"/>
 </head>
 <body>
-
-  <div id="dashboard">
-    <div id="avatar" class="dashboard-section">
-      <!-- Placeholder image, replace with actual avatar -->
-      <img src="img/icon.png" alt="Avatar">
-    </div>
-
-    <div id="name-box" class="dashboard-section">
-        <!-- Replace with actual employee name -->
-        Kaelem Dwight
-    </div>
-
-    <div id="employee-details" class="dashboard-section">
-      <h2>Associate Details</h2>
-      <p><strong>Position:</strong> Sales Consultant</p>
-      <p><strong>Email:</strong> N/A</p>
-      <p><strong>Phone:</strong> N/A</p>
-      <p><strong>Commencement:</strong> 16.01.2024</p>
-    </div>
-
-    <div id="notifications" class="dashboard-section">
-        <h2>Notifications</h2>
-        <p>No new notifications at the moment.</p>
+  <div class="profile-card">
+    <div class="profile-card-header">
+      <div class="profile-image"></div>
+  
+      <div class="profile-info">
+        <h3 class="profile-name">Kaelem Dwight</h3>
+        <p class="profile-desc">Sales Consultant</p>
       </div>
-
-    <div id="updates" class="dashboard-section">
-      <h2>Conduit Management Resources</h2>
-      <p>Latest Updates, Announcements and Resources will be displayed here.</p>
     </div>
+  
+    <div class="profile-card-body">
+      <ul class="status">
+        <li>
+          <span class="status-value">0</span>
+          <span class="status-text">Managing</span>
+        </li>
 
-    <div id="tasks" class="dashboard-section">
-      <h2>Tasks</h2>
-      <ul>
-        <p><a href="">Lead List #1 | 00.00.2024</a></p>
+        <li>
+          <span class="status-value">16.01.24</span>
+          <span class="status-text">Joined</span>
+        </li>
+
+        <li>
+          <span class="status-value">S+</span>
+          <span class="status-text">Rank</span>
+        </li>
+
       </ul>
+  
+      <div class="action">
+        <a class="btn btn-pink" href="mailto:conduitmgmt@gmail.com">Contact</a>
+        <a class="btn btn-gray-outline" href="https://www.instagram.com/kaelemdwight/">Follow</a>
+      </div>
     </div>
-
+  </div>
 </body>
 </html>
