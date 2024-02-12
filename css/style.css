@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
 
 body {
-  font-family: 'Oswald', sans-serif;
-  font-family: 'Ubuntu Condensed', sans-serif;
+  /*font-family: 'Oswald', sans-serif;
+  font-family: 'Ubuntu Condensed', sans-serif;*/
+  font-family: 'Quicksand', sans-serif;
   color: #040000;
   scroll-behavior: smooth; /* Enable smooth scrolling behavior */
 }
@@ -93,7 +95,7 @@ a:focus {
 
 .header_section .header_top {
   padding: 15px 0;
-  background-color: #000000;
+  background-color: #F9FAFD;
 }
 
 .header_section .header_top .contact_nav {
@@ -106,7 +108,7 @@ a:focus {
 }
 
 .header_section .header_top .contact_nav a {
-  color: #ffffff;
+  color: #000;
 }
 
 .header_section .header_top .contact_nav a i {
@@ -133,6 +135,7 @@ a:focus {
 
 .custom_nav-container {
   padding: 0;
+  opacity: 1;
 }
 
 .custom_nav-container .navbar-nav {
@@ -283,6 +286,8 @@ a:focus {
           align-items: center;
   background-size: cover;
   background-position: bottom;
+  opacity: 1;
+  height: 90vh;
 }
 
 .slider_section .row {
@@ -337,6 +342,7 @@ a:focus {
 .feature_section {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  opacity: 1;
 }
 
 .feature_section .feature_container {
@@ -410,6 +416,10 @@ a:focus {
   fill: #ffffff;
 }
 
+.about_section{
+  opacity: 1;
+}
+
 .about_section .row {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -449,6 +459,7 @@ a:focus {
 
 .professional_section {
   background-color: #F9FAFD;
+  opacity: 1;
 }
 
 .professional_section .row {
@@ -490,6 +501,7 @@ a:focus {
 
 .service_section {
   position: relative;
+  opacity: 1;
 }
 
 .service_section .box {
@@ -588,11 +600,16 @@ a:focus {
   color: #8C52FF;
 }
 
+.client_section{
+  opacity: 1;
+}
+
 .client_section .heading_container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  opacity: 1;
 }
 
 .client_section .box {
@@ -668,6 +685,7 @@ a:focus {
 
 .heading_container {
   margin-bottom: 30px;
+  opacity: 1;
 }
 
 .contact_section input {
@@ -731,9 +749,10 @@ a:focus {
 
 .info_section {
   padding: 75px 0;
-  background-color: #000000;
+  background-color: #F9FAFD;
   text-align: center;
-  color: #fff;
+  color: #000;
+  opacity: 1;
 }
 
 .info_section h4 {
@@ -812,9 +831,9 @@ a:focus {
 
 .info_items .item p {
   margin-top: 25px;
-  color: #fff;
+  color: #000;
   margin-bottom: 0;
-  background-color: #000000;
+  background-color: #F9FAFD;
 }
 
 .info_items .item:hover .img-box {
@@ -839,13 +858,14 @@ a:focus {
 
 /* footer section*/
 .footer_section {
-  background-color: #000000;
+  background-color: #F9FAFD;
+  opacity: 1;
 }
 
 .footer_section p {
   margin: 0;
   padding: 25px 0;
-  color: #ffffff;
+  color: #000;
   text-align: center;
   border-top: 0.8px solid #ffffff;
 }
