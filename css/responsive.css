@@ -97,19 +97,19 @@
 
 @media (max-width: 480px) {
     .header_section{
-        margin-bottom: 1px;
+        margin-bottom: 1rem;
     }
 }
 
 @media (max-width: 400px) {
     .header_section{
-        margin-bottom: 10%;
+        margin-bottom: 1rem;
     }
 }
 
 @media (max-width: 376px) {
     .header_section{
-        margin-bottom: 25%;
+        margin-bottom: 5rem;
     }
 }
 
