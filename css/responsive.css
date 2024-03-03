@@ -112,7 +112,7 @@
 
 @media (max-width: 400px) {
     .header_section {
-        margin-bottom: 60px;
+        margin-bottom: 90px;
     }
 
     .navbar-brand span {
@@ -122,7 +122,7 @@
 
 @media (max-width: 376px) {
     .header_section {
-        margin-bottom: 120px;
+        margin-bottom: 135px;
     }
 
     .navbar-brand span {
