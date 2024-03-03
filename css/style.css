@@ -96,9 +96,10 @@ a:focus {
 .header_section .header_top {
     padding: 15px 0;
     background-color: #f9fafd;
-    -moz-box-shadow: -1px 4px 12px #00000014;
-    -webkit-box-shadow: -1px 4px 12px #00000014;
-    box-shadow: -1px 4px 12px #00000014;
+    -moz-box-shadow: -1px 4px 12px #00000017;
+    -webkit-box-shadow: -1px 4px 12px #00000017;
+    box-shadow: -1px 4px 12px #00000017;
+    border-radius: 25px;
 }
 
 .header_section .header_top .contact_nav {
@@ -337,6 +338,9 @@ a:focus {
     border-radius: 10px;
     color: #ffffff;
     margin-top: 15px;
+    -moz-box-shadow: -1px 4px 12px #00000017;
+    -webkit-box-shadow: -1px 4px 12px #00000017;
+    box-shadow: -1px 4px 12px #00000017;
 }
 
 .slider_section .detail-box a:hover {
