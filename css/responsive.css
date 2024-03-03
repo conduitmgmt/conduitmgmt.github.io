@@ -1,8 +1,17 @@
-@media (max-width: 1450px) {}
+@media (min-width: 1px) {
+    .navbar-brand {
+        font-size: 28px;
+    }
+}
 
-@media (max-width: 1300px) {}
+@media (max-width: 1450px) {
+}
 
-@media (max-width: 1120px) {}
+@media (max-width: 1300px) {
+}
+
+@media (max-width: 1120px) {
+}
 
 @media (max-width: 992px) {
     .hero_area {
@@ -29,13 +38,10 @@
         width: 75px;
     }
 
-
     .feature_section {
         transform: none;
         padding: 90px 0;
     }
-
-
 }
 
 @media (max-width: 767px) {
@@ -72,7 +78,6 @@
         margin-bottom: 45px;
     }
 
-
     .professional_section .img-box {
         display: none;
     }
@@ -86,30 +91,42 @@
         height: 90%;
         top: 25px;
     }
-
 }
 
 @media (max-width: 541px) {
-    .header_section{
+    .header_section {
         margin-bottom: 130px;
     }
 }
 
 @media (max-width: 480px) {
-    .header_section{
+    .header_section {
         margin-bottom: 40px;
+    }
+
+    .navbar-brand span {
+        color: #8c52ff;
+        font-size: 26px;
     }
 }
 
 @media (max-width: 400px) {
-    .header_section{
+    .header_section {
         margin-bottom: 40px;
+    }
+
+    .navbar-brand span {
+        font-size: 24px;
     }
 }
 
 @media (max-width: 376px) {
-    .header_section{
+    .header_section {
         margin-bottom: 90px;
+    }
+
+    .navbar-brand span {
+        font-size: 22px;
     }
 }
 
@@ -129,5 +146,4 @@
     .container {
         max-width: 1170px;
     }
-
 }
