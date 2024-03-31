@@ -63,17 +63,20 @@
         <link href="css/style.css" rel="stylesheet" />
         <!-- responsive style -->
         <link href="css/responsive.css" rel="stylesheet" />
-
-        <script
-            src="https://kit.fontawesome.com/a076d05399.js"
-            crossorigin="anonymous"
-        ></script>
-        <script src="https://use.fontawesome.com/a3fe9be396.js"></script>
         <script
             src="https://kit.fontawesome.com/dedddf50d6.js"
             crossorigin="anonymous"
         ></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="js/jquery-3.7.1.js"></script>
+        <script src="js/animations.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script src="js/custom.js"></script>
+        <script
+        type="text/javascript"
+        src="https://app.termly.io/resource-blocker/50112e38-755d-4d33-929a-92c0f1222709?autoBlock=on"
+        ></script>
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
         <link rel="canonical" href="https://www.conduitmgmt.com/" />
         <!--Yo this the main page-->
@@ -81,15 +84,15 @@
 
     <body>
         <!-- Cookies Consent -->
-        <div class="cookies">
+        <!-- <div class="cookies">
             <span
                 class="closebtn"
                 onclick="this.parentElement.style.display='none';"
                 >&times;</span
             >
             Conduit Management's Website uses Cookies to personalise your
-            experience. <a href="">Click here</a> to find out more!
-        </div>
+            experience. <a href="policies/cookies">Click here</a> to find out more!
+        </div> -->
 
         <!-- End Cookies Consent -->
 
@@ -349,7 +352,7 @@
         <!-- end professional section -->
 
         <!-- service section -->
-        <FadeInSection>
+        <div class="scroll-animations">
             <section class="service_section layout_padding" id="services">
                 <div class="container" id="">
                     <div class="heading_container heading_center">
@@ -372,15 +375,17 @@
                                         />
                                     </svg>
                                 </div>
-                                <div class="detail-box">
-                                    <h5>Website Creation</h5>
-                                    <p>
-                                        We will create a professional website for
-                                        you and your business with numerous
-                                        templates to choose from! Level up your
-                                        business with Conduit Website Creation
-                                        Package.
-                                    </p>
+                                <div class="animated">
+                                    <div class="detail-box">
+                                        <h5>Website Creation</h5>
+                                        <p>
+                                            We will create a professional website for
+                                            you and your business with numerous
+                                            templates to choose from! Level up your
+                                            business with Conduit Website Creation
+                                            Package.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -400,15 +405,17 @@
                                         />
                                     </svg>
                                 </div>
-                                <div class="detail-box">
-                                    <h5>SEO</h5>
-                                    <p>
-                                        We will make sure that Google Search or any
-                                        other search engine for that matter, will
-                                        rank your business higher than the rest of
-                                        the competition, so you will always be the
-                                        top pick!
-                                    </p>
+                                <div class="animated">
+                                    <div class="detail-box">
+                                        <h5>SEO</h5>
+                                        <p>
+                                            We will make sure that Google Search or any
+                                            other search engine for that matter, will
+                                            rank your business higher than the rest of
+                                            the competition, so you will always be the
+                                            top pick!
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -428,14 +435,16 @@
                                         />
                                     </svg>
                                 </div>
-                                <div class="detail-box">
-                                    <h5>Posts and Reels</h5>
-                                    <p>
-                                        We will create customised posts and reels
-                                        that we have analysed through the algorithm,
-                                        stylised for your brand, for you to gain
-                                        followers, likes, shares and engagement.
-                                    </p>
+                                <div class="animated">
+                                    <div class="detail-box">
+                                        <h5>Posts and Reels</h5>
+                                        <p>
+                                            We will create customised posts and reels
+                                            that we have analysed through the algorithm,
+                                            stylised for your brand, for you to gain
+                                            followers, likes, shares and engagement.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -458,15 +467,17 @@
                                         />
                                     </svg>
                                 </div>
-                                <div class="detail-box">
-                                    <h5>Branding</h5>
-                                    <p>
-                                        Regardless of whatever stage you are upto in
-                                        your business, we will lend a helping hand!
-                                        Let our skilled designers and creators
-                                        create the right logo and theme to suit your
-                                        business.
-                                    </p>
+                                <div class="animated">
+                                    <div class="detail-box">
+                                        <h5>Branding</h5>
+                                        <p>
+                                            Regardless of whatever stage you are upto in
+                                            your business, we will lend a helping hand!
+                                            Let our skilled designers and creators
+                                            create the right logo and theme to suit your
+                                            business.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -486,15 +497,17 @@
                                         />
                                     </svg>
                                 </div>
-                                <div class="detail-box">
-                                    <h5>UI & UX</h5>
-                                    <p>
-                                        First impressions count the most! So let us
-                                        assist you in creating your dream UI, with
-                                        the right impact, and the UX easy, whether
-                                        it be an app or website we shall help you
-                                        design every step of the way.
-                                    </p>
+                                <div class="animated">
+                                    <div class="detail-box">
+                                        <h5>UI & UX</h5>
+                                        <p>
+                                            First impressions count the most! So let us
+                                            assist you in creating your dream UI, with
+                                            the right impact, and the UX easy, whether
+                                            it be an app or website we shall help you
+                                            design every step of the way.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -514,15 +527,17 @@
                                         />
                                     </svg>
                                 </div>
-                                <div class="detail-box">
-                                    <h5>Google Reviews</h5>
-                                    <p>
-                                        Intrigue customers with your impressive
-                                        company reviews on google, show that you
-                                        mean business, and let us automate it for
-                                        you and recieve all the critical reviews
-                                        without tarnishing your reputation!
-                                    </p>
+                                <div class="animated">
+                                    <div class="detail-box">
+                                        <h5>Google Reviews</h5>
+                                        <p>
+                                            Intrigue customers with your impressive
+                                            company reviews on google, show that you
+                                            mean business, and let us automate it for
+                                            you and recieve all the critical reviews
+                                            without tarnishing your reputation!
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -532,7 +547,7 @@
                     </div>
                 </div>
             </section>
-        </FadeInSection>
+        </div>
 
         <!-- end service section -->
 
@@ -608,7 +623,7 @@
                                 <div class="box">
                                     <div class="client_id">
                                         <div class="img-box">
-                                            <img src="images/client-2.jpg" alt="" />
+                                            <img src="img/icon.png" alt="" />
                                         </div>
                                         <div class="client_detail">
                                             <div class="client_info">
@@ -652,7 +667,7 @@
                                 <div class="box">
                                     <div class="client_id">
                                         <div class="img-box">
-                                            <img src="images/client-1.jpg" alt="" />
+                                            <img src="img/icon.png" alt="" />
                                         </div>
                                         <div class="client_detail">
                                             <div class="client_info">
@@ -696,7 +711,7 @@
                                 <div class="box">
                                     <div class="client_id">
                                         <div class="img-box">
-                                            <img src="images/client-2.jpg" alt="" />
+                                            <img src="img/astral-dark-rounded.png" alt="" />
                                         </div>
                                         <div class="client_detail">
                                             <div class="client_info">
@@ -775,7 +790,7 @@
                             </div>
                         </form>
                     </div>
-                    <div class="col-md-6">
+                    <!-- <div class="col-md-6">
                         <div class="map_container">
                             <div class="map">
                                 <div
@@ -784,7 +799,7 @@
                                 ></div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -884,7 +899,12 @@
                             >Terms and Conditions</a
                         >
                     </p>
-                    <p>ABN: 92853427076</p>
+                    <p>
+                        <a href="#"
+                        style="justify-content: center; color: #1bcaff"
+                        class="termly-display-preferences">Consent Preferences</a>
+                    </p>
+                    <p style="display: none;">ABN: 92853427076</p>
                 </div>
                 <p>
                     &copy; <span id="displayDateYear"></span> All Rights
@@ -896,13 +916,8 @@
             </div>
         </footer>
         <!-- footer section -->
-
-        <script src="js/jquery-3.4.1.min.js"></script>
-        <script src="js/bootstrap.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-        <script src="js/custom.js"></script>
         <!-- Google Map -->
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+        <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script> -->
         <!-- End Google Map -->
     </body>
 </html>

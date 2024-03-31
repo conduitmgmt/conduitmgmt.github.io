@@ -33,13 +33,13 @@ $(".owl-carousel").owlCarousel({
 
 /** google_map js **/
 
-function myMap() {
-    var mapProp = {
-        center: new google.maps.LatLng(40.712775, -74.005973),
-        zoom: 18,
-    };
-    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-}
+// function myMap() {
+//     var mapProp = {
+//         center: new google.maps.LatLng(40.712775, -74.005973),
+//         zoom: 18,
+//     };
+//     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+// }
 
 // JavaScript to handle smooth scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -68,24 +68,3 @@ $(window).scroll(function() {
     });
 }).scroll(); //invoke scroll-handler on page-load
 });
-
-
-function FadeInSection(props) {
-const [isVisible, setVisible] = React.useState(true);
-const domRef = React.useRef();
-
-React.useEffect(() => {
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => setVisible(entry.isIntersecting));
-    });
-    observer.observe(domRef.current);
-
-    return () => observer.unobserve(domRef.current);
-}, []);
-
-return (
-    <div className={`fade-in-section ${isVisible ? 'is-visible' : ''}`} ref={domRef}>
-        {props.children}
-    </div>
-);
-}
