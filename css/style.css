@@ -52,16 +52,17 @@ body {
 
 /* Cookies */
 /* The alert message box */
-.cookies {
+.information {
   padding: 20px;
-  background-color: #8c52ff;
+  background: rgb(93,224,230);
+  background: linear-gradient(90deg, rgba(93,224,230,1) 0%, rgba(62,137,237,1) 100%);
   color: white;
   margin-bottom: 15px;
 }
 
-.cookies a {
+.information a {
   text-decoration: none;
-  color: #1bcaff;
+  color: #5de0e6;
 }
 
 /* The close button */
