@@ -1,0 +1,18 @@
+import os, subprocess
+
+def createWebsite():
+    # Create a new directory
+    os.mkdir("website")
+    # Change the current working directory to the new directory
+    os.chdir("website")
+    # Create a new index.html file
+    with open("index.html", "w") as file:
+        file.write("<h1>Welcome to my website!</h1>")
+    # Create a new style.css file
+    with open("style.css", "w") as file:
+        file.write("h1 { color: blue; }")
+    # Create a new script.js file
+    with open("script.js", "w") as file:
+        file.write("document.querySelector('h1').style.color = 'red';")
+    # Open the new website in the default web browser
+    subprocess.Popen(["xdg-open", "index.html"])
